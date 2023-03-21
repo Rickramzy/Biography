@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="./style.css">
-    <link type="text/css" rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <title>Fela | Biolography, Life and Shows</title>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Fela | Biography, Life and Shows</title>
 </head>
-
 <body>
     <div class="menu-btn">
-        <img src="./assets/images/bars.png">
+        <img src="./Assets/Images/bars.png">
     </div>
     <div class="container">
         <nav class="main-nav">
             <ul>
-                <li>Fela</li>
-            </ul>
+                <img src="./Assets/Images/fela-logo.png" class="logo">
+            </ul>   
             <ul class="main-menu">
                 <li>Biography</li>
                 <li>Credits</li>
                 <li>Songs</li>
-                <li>Performance</li>
+                <li>Performances</li>
                 <li>Kalakuta Republic</li>
             </ul>
             <ul class="right-menu">
-                <img src="./assets/images/Gallery.gif">
+            <img src="./Assets/Images/Gallery.gif">
             </ul>
         </nav>
     </div>
-    <section class="hero">
-        <p>Afro-beat Legend</p>
+    <section class="hero"> 
+        <div class="sub-hero">
+            <h1>Legendary Afro-beat King</h1>
+            <p>Biography and more of the Nigerian Fela Anikulakpo Kuti</p>
+        </div>
     </section>
+    <section id="biography">
+        <div class="bio-container">
+            <div class="bio-content">
+                <div class="section-title">
+                    <hr>
+                    <h1>Biography</h1>
+                </div>
+                <p>Fela Kuti (born October 15, 1938 – August 2, 1997) as a Nigerian multi-instrumentalist musician and composer, pioneer of Afrobeat music,
+                    human rights activist, and political maverick. Kuti was born Olufela Olusegun Oludotun Ransome-Kuti in 
+                    Abeokuta, Ogun State, Nigeria into a middle-class family.<br><br> His mother, Funmilayo Ransome-Kuti was a feminist 
+                    activist in the anti-colonial movement and his father, Reverend Israel Oludotun Ransome-Kuti, a Protestant minister 
+                    and school principal, was the first president of the Nigerian Union of Teachers.</p>
+                <a href="./Biography-Page/biography.html"><button>Read more</button></a>  
+            </div>
+            <div>
+                <img src="./assets//Images/felllaaaaa.webp">
+            </div> 
+        </div>
+    </section>
+    
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+    </script>
 </body>
-
 </html>

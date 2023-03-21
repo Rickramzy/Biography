@@ -1,54 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Edu NSW ACT Foundation', cursive;
 }
 
 .container {
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-/* height: 4rem; */
-background-color: white;
-/* position: fixed; */
-margin: auto;
-padding: 1rem 3rem;
-background: right bottom;
-transition: all 0.8s ease-in-out;
-color: rgb(27, 0, 27);
-text-transform: uppercase;
+    /* width: 90%;
+    max-width: 1100px; */
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+    /* height: 4rem; */
+    /* position: fixed; */
+    padding: 1rem 3rem;
+    background: right bottom;
+    transition: all 0.3s ease-in-out;
+    color: rgb(27, 1, 27);
+    text-transform: uppercase;
+}
+
+.container nav ul li:hover {
+    cursor: pointer;
+    color: rgb(143, 26, 143);
 }
 
 .container nav ul li {
     list-style: none;
 }
 
-.container nav ul li:hover {
-    cursor: pointer;
-    color: rgba(143, 26, 143);
-}
-
 /* nav style */
 .main-nav {
-    /* display: flex;
-    flex-direction: row; */
-    /* justify-content: space-between; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    height: 60px;
-    padding: 20px 0;
+    height: 30px;
+    /* padding: 5px 0; */
     font-size: 13px;
 }
-.main-menu {
-    display: grid;
-    grid-gap: 5%;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+
+.logo {
+    height: 3rem;
+    width: 3rem;
 }
 
-.main-nav ul{
-    /* display: grid; */
+.main-nav ul {
+    display: flex;
 }
 
 .main-nav ul li {
@@ -57,7 +60,6 @@ text-transform: uppercase;
 
 .main-nav ul li a {
     padding-bottom: 2px;
-    
 }
 
 .menu-btn {
@@ -69,18 +71,93 @@ text-transform: uppercase;
     display: none;
 }
 
+/* hero section */
 .hero {
-    background-image: url(./assets/images/Fela-Kuti_4.webp);
-    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/Fela-Kuti_4.webp) ;
+    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20rem;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero p {
+.hero h1 {
     color: #ffffff;
     font-weight: 900;
     text-transform: uppercase;
+    font-size: 6rem;
+    margin: 0 24vw;
+    text-align: center;
+}
+.hero p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* biography section */
+#biography {
+    margin: 5rem 3rem;
+}
+
+.section-title {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1%;
+}
+#biography hr {
+    background-color: #0C1024;
+    width: 4rem;
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #0C1024;
+    margin-top: 2.8rem;
+}
+
+.bio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 3%;   
+  
+}
+
+#biography h1{
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color:#0C1024;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.bio-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.bio-container p {
+    text-align: justify;
+}
+
+.bio-container button:hover {
+    cursor: pointer;
+    background-color: #0C1024;
+    color: #E1D8EB;
+    border: 1px solid #E1D8EB;
+}
+
+.bio-container button {
+    margin-top: 2rem;
+    background-color: transparent;
+    color: #0C1024;
+    /* width: 7rem;
+    height: 3rem; */
+    padding: 1rem 2rem;
+    border: 1px solid #0C1024;
+    border-radius: 0.5rem;
 }
 
 /* media query */
@@ -88,28 +165,129 @@ text-transform: uppercase;
     .menu-btn {
         display: block;
     }
-        
-
     .menu-btn:hover {
         opacity: 0.5;
     }
-
     .main-nav ul.right-menu {
-        margin-right: 50px;
+       margin-right: 50px; 
+    }
+    .main-nav ul.main-menu  {
+        display: block;    
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: 1px solid #cccccc;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
     }
 
-    .main-nav ul.main-menu {
+    .main-nav ul.main-menu li {
+        padding: 10px;
+        border-bottom: 1px solid #cccccc;
+        font-size: 14px;
+    }
+
+    .main-nav ul.main-menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .main-nav ul.main-menu.show {
+        transform: translateX(-20px);
+    }
+    
+    .logo {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .right-menu img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .menu-btn {
+        top: 20px;
+        right: 30px;
+    }
+
+    .hero h1 {
+        margin: 0 20vw;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    /* biography section */
+#biography {
+    margin: 10% 4%;
+}
+
+.section-title {
+    grid-template-columns: 1fr 7fr;
+}
+
+.bio-container {
+    grid-template-columns: 1fr;    
+}
+
+.bio-container img {
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #f2f2f2;
-    width: 50%;
-    height: 100px;
-    border-right: 1px solid #cccccc;
-    opacity: 0.9;
-    padding: 30px;
-    transform: translateX(-500px);
-    transition: transform 0.5s ease-in-out;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0 24vw;
+    text-align: center;
+}  
+}
+
+@media only screen and (max-width: 425px) {
+    .hero h1 {
+        color: #ffffff;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin: 0 24vw;
+        text-align: center;
+    }  
+
+    .bio-container {
+        margin: 2rem;
+        display: block;    
+    }
+
+    .bio-container button {
+        margin-bottom: 2rem;  
+    }
+    
+    .bio-container img {
+        width: 65vw;
+        height: 30vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero p {
+        font-size: 0.5rem;
+    }
+
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/Fela-Kuti_4.webp) ;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
