@@ -18,7 +18,7 @@
                 <img src="./Assets/Images/fela-logo.png" class="logo">
             </ul>   
             <ul class="main-menu">
-                <li>Biography</li>
+                <a href="#biography"><li>Biography</li></a>
                 <li>Credits</li>
                 <li>Songs</li>
                 <li>Performances</li>
@@ -50,11 +50,41 @@
                 <a href="./Biography-Page/biography.html"><button>Read more</button></a>  
             </div>
             <div>
-                <img src="./assets//Images/felllaaaaa.webp">
+                <img src="./assets//Images/bio-hero.png">
             </div> 
         </div>
     </section>
-    
+    <!-- songs section -->
+    <section id="songs">
+        <div>
+            <h1>Songs</h1>
+        <p>Combining components of conventional highlife and jazz, Fela named is hightening musical cross breed style "Afro-beat",
+            incompletely as eveluate of African entertainers whom he felt had turned their backs on their African melodic roots in arrange to imitate
+            current American pop music patterns.</p>
+        <a href="#"><button>Listen here</button></a>
+        </div>
+    </section>
+    <section id="performance">
+        <div class="performance-container">
+            <div class="performance-content">
+                <div class="section-title">
+                    <hr>
+                    <h1>Performances</h1>
+                </div>
+                <p>Usually, he refer to his stage act as <span class="performance-span">Underground Spiritual Game</span>. Frequently, 
+                    Fela's concerts included female vocalists and artists, afterward named as "Rulers." The Rulers were ladies who made a different 
+                    impact to the popularization of his music. <br><br> They were dressed colorfully and wore cosmetics all over their bodies through 
+                    which their visual imaginations are communicated. The vocalists of the gather played a reinforcement part for Fela, ordinarily reverberating his 
+                    words or murmuring along, whereas the artists would put on a execution of suggestive way.</p>
+                    <a href="#"><button>View more</button></a>
+            </div>
+            <div class="show-clip">
+                    <video controls src="./assets/videos/Fela Kuti & Africa 70 - V.I.P. 2_2 (Berlin 1978).mp4" type="video/mp4"></video>
+                    <p>The Father of Afro-beat, Fela Kuti & Africa 70 - V.I.P. 2_2 (Berlin 1978)</p>
+            </div>
+        </div>
+        
+    </section>
     <script>
         document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
     </script>

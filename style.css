@@ -10,6 +10,9 @@ body {
     font-family: 'Edu NSW ACT Foundation', cursive;
 }
 
+a {
+    text-decoration: none;
+}
 .container {
     /* width: 90%;
     max-width: 1100px; */
@@ -107,6 +110,7 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-gap: 1%;
 }
+
 #biography hr {
     background-color: #0C1024;
     width: 4rem;
@@ -120,7 +124,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-gap: 3%;   
-  
 }
 
 #biography h1{
@@ -134,7 +137,7 @@ body {
 
 .bio-container img {
     width: 100%;
-    max-width: 400px;
+    max-width: 680px;
     height: auto;
 }
 
@@ -150,6 +153,115 @@ body {
 }
 
 .bio-container button {
+    margin-top: 2rem;
+    background-color: transparent;
+    color: #0C1024;
+    /* width: 7rem;
+    height: 3rem; */
+    padding: 1rem 2rem;
+    border: 1px solid #0C1024;
+    border-radius: 0.5rem;
+}
+
+#songs {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/fela-songs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#songs h1 {
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+#songs p {
+    color: #ffffff;
+    text-align: center;
+    margin: 0rem 15rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#songs button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 9rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #E1D8EB;
+}
+
+#songs button:hover {
+    cursor: pointer;
+    background-color: #511400;
+    color: #E1D8EB;
+    border: 1px solid #E1D8EB;
+}
+
+/* performance section */
+#performance {
+    margin: 5rem 3rem;
+}
+
+.section-title {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1%;
+}
+
+#performance hr {
+    background-color: #0C1024;
+    width: 4rem;
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #0C1024;
+    margin-top: 2.8rem;
+}
+
+.performance-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 3%;   
+  
+}
+
+#performance h1{
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color:#0C1024;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.performance-container video {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+}
+
+.performance-container p {
+    text-align: justify;
+}
+
+.performance-container button:hover {
+    cursor: pointer;
+    background-color: #0C1024;
+    color: #E1D8EB;
+    border: 1px solid #E1D8EB;
+}
+
+.performance-container button {
     margin-top: 2rem;
     background-color: transparent;
     color: #0C1024;
@@ -245,9 +357,48 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     font-size: 2rem;
-    margin: 0 24vw;
+    margin: 0 20vw;
     text-align: center;
+}
+.hero p {
+    margin: 0 15vw;
 }  
+
+/* performance section */
+#performance {
+    margin: 10% 4%;
+}
+
+.section-title {
+    grid-template-columns: 1fr 7fr;
+}
+
+.performance-container {
+    grid-template-columns: 1fr;    
+}
+
+.performance-container img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#songs p {
+    color: #ffffff;
+    text-align: center;
+    margin: 0rem 3rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+#songs button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 7rem;
+}
 }
 
 @media only screen and (max-width: 425px) {
@@ -256,12 +407,16 @@ body {
         font-weight: 500;
         text-transform: uppercase;
         font-size: 2rem;
-        margin: 0 24vw;
+        margin: 0 20vw;
         text-align: center;
     }  
 
+    #biography {
+    margin: 10% 5%;
+    }
+
     .bio-container {
-        margin: 2rem;
+        /* margin: 2rem; */
         display: block;    
     }
 
