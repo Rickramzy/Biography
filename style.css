@@ -13,6 +13,7 @@ body {
 a {
     text-decoration: none;
 }
+
 .container {
     /* width: 90%;
     max-width: 1100px; */
@@ -76,7 +77,7 @@ a {
 
 /* hero section */
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/Fela-Kuti_4.webp) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/Fela-Kuti_4.webp);
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,6 +95,7 @@ a {
     margin: 0 24vw;
     text-align: center;
 }
+
 .hero p {
     color: #ffffff;
     text-align: center;
@@ -122,15 +124,15 @@ a {
 
 .bio-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 3%;   
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
 }
 
-#biography h1{
+#biography h1 {
     text-align: left;
     text-transform: uppercase;
     margin-top: 2rem;
-    color:#0C1024;
+    color: #0C1024;
     font-weight: 900;
     margin-bottom: 1rem;
 }
@@ -139,10 +141,12 @@ a {
     width: 100%;
     max-width: 680px;
     height: auto;
+    margin-top: 1rem;
 }
 
 .bio-container p {
     text-align: justify;
+    font-size: 1rem;
 }
 
 .bio-container button:hover {
@@ -163,11 +167,12 @@ a {
     border-radius: 0.5rem;
 }
 
+/* songs section */
 #songs {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/fela-songs.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -178,14 +183,16 @@ a {
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 3rem;
 }
 
 #songs p {
     color: #ffffff;
     text-align: center;
-    margin: 0rem 15rem;
-    padding-bottom: 1rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
     font-size: 1.5rem;
 }
 
@@ -193,19 +200,20 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    border-radius: 1rem;
-    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
     width: 9rem;
     color: #ffffff;
     background-color: transparent;
-    border: 1px solid #E1D8EB;
+    border: 1px solid #ffffff;
 }
 
 #songs button:hover {
     cursor: pointer;
     background-color: #511400;
     color: #E1D8EB;
-    border: 1px solid #E1D8EB;
+    border: 1px solid #ffffff;
 }
 
 /* performance section */
@@ -230,28 +238,40 @@ a {
 
 .performance-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 3%;   
-  
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+
 }
 
-#performance h1{
+#performance h1 {
     text-align: left;
     text-transform: uppercase;
     margin-top: 2rem;
-    color:#0C1024;
+    color: #0C1024;
     font-weight: 900;
     margin-bottom: 1rem;
 }
 
 .performance-container video {
     width: 100%;
-    max-width: 680px;
+    max-width: 800px;
     height: auto;
+    margin-top: 1rem;
+}
+
+.show-clip p {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .performance-container p {
     text-align: justify;
+    font-size: 1.5rem;
+}
+
+.performance-span {
+    font-weight: 900;
 }
 
 .performance-container button:hover {
@@ -260,6 +280,7 @@ a {
     color: #E1D8EB;
     border: 1px solid #E1D8EB;
 }
+
 
 .performance-container button {
     margin-top: 2rem;
@@ -272,19 +293,295 @@ a {
     border-radius: 0.5rem;
 }
 
+/* kalakuta section */
+.republic-outter {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ffffff;
+    margin: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#republic {
+    margin: 5rem 3rem;
+}
+
+.republic-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+}
+
+.republic-content hr {
+    background-color: #0C1024;
+    width: 4rem;
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #0C1024;
+    margin-top: 2.8rem;
+}
+
+.republic-content p {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.republic-content h1 {
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color: #0C1024;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.republic-content button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2rem;
+    background-color: transparent;
+    color: #0C1024;
+    padding: 0.5rem 2.5rem;
+    border: 1px solid #0C1024;
+    border-radius: 0.5rem;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.republic-content button:hover {
+    cursor: pointer;
+    background-color: #0C1024;
+    color: #E1D8EB;
+    border: 1px solid #E1D8EB;
+}
+
+.republic-container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.republic-container img.image-1 {
+    position: absolute;
+    z-index: 1;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 5px #0C1024;
+
+}
+
+.republic-container img.image-2 {
+    position: absolute;
+    z-index: 2;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 5px #0C1024;
+    margin-top: 9%;
+    margin-left: 9%;
+}
+
+/* gallery */
+#gallery {
+    padding: 5rem 1rem;
+    margin: 5rem 0;
+    background: linear-gradient(#0C1024, #ffffff);
+    overflow: hidden;
+}
+
+@keyframes slides {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+/* .slides {
+    width: 100%;
+    display: flex;
+    transform: translateX(-800px);
+    animation-name: slides;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+} */
+
+.section-title2 h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: wheat;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+}
+
+#gallery img {
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#gallery button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 2rem;
+    background-color: transparent;
+    color: #0C1024;
+    padding: 0.5rem 2.5rem;
+    border: 1px solid #0C1024;
+    border-radius: 0.5rem;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#gallery button:hover {
+    cursor: pointer;
+    background-color: #0C1024;
+    color: #E1D8EB;
+    border: 1px solid #E1D8EB;
+    background-position: left bottom;
+    transition: all 0.5s eas-in;
+}
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide-container {
+    display: block;
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all 0.7s ease-in-out;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    background-color: yellow;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    color: #ffffff;
+    font-size: 10rem;
+    text-align: center;
+    line-height: 380px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-shadow: 0px 0px 15px rgb(119, 199, 199);
+}
+
+.slide:hover +.nav label {
+    opacity: 0.5;
+}
+
+.nav label:hover {
+    opacity: 1;
+}
+
+/* .nav.prev {
+    left: 0;
+}  */
+
+.nav.next {
+    right: 0;
+}
+
+input:checked + .slide-container .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label {
+    display: block;
+
+}
+
 /* media query */
 @media only screen and (max-width: 960px) {
     .menu-btn {
         display: block;
     }
+
     .menu-btn:hover {
         opacity: 0.5;
     }
+
     .main-nav ul.right-menu {
-       margin-right: 50px; 
+        margin-right: 50px;
     }
-    .main-nav ul.main-menu  {
-        display: block;    
+
+    .main-nav ul.main-menu {
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
@@ -311,7 +608,7 @@ a {
     .main-nav ul.main-menu.show {
         transform: translateX(-20px);
     }
-    
+
     .logo {
         height: 2rem;
         width: 2rem;
@@ -327,78 +624,153 @@ a {
         right: 30px;
     }
 
-    .hero h1 {
+    /* .hero h1 {
         margin: 0 20vw;
+    } */
+    .bio-container p {
+        font-size: 13px;
+    }
+
+    .bio-container button {
+        padding: 0.5rem 1rem;
+    }
+
+    #songs h1 {
+        margin-bottom: 2rem;
+        font-weight: 600;
+    }
+
+    #songs p {
+        margin-left: 8rem;
+        margin-right: 8rem;
+        font-size: 13px;
+    }
+
+    #songs button {
+        padding: 0.5rem 1rem;
+    }
+
+    .performance-container p {
+        font-size: 13px;
+    }
+
+    .performance-container button {
+        padding: 0.5rem 1rem;
     }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
+
     /* biography section */
-#biography {
-    margin: 10% 4%;
-}
+    #biography {
+        margin: 10% 4%;
+    }
 
-.section-title {
-    grid-template-columns: 1fr 7fr;
-}
+    .section-title {
+        grid-template-columns: 1fr 7fr;
+    }
 
-.bio-container {
-    grid-template-columns: 1fr;    
-}
+    .bio-container {
+        grid-template-columns: 1fr;
+    }
 
-.bio-container img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+    .bio-container img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
-.hero h1 {
-    color: #ffffff;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin: 0 20vw;
-    text-align: center;
-}
-.hero p {
-    margin: 0 15vw;
-}  
+    .hero h1 {
+        color: #ffffff;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin: 0 20vw;
+        text-align: center;
+    }
 
-/* performance section */
-#performance {
-    margin: 10% 4%;
-}
+    .hero p {
+        margin: 0 15vw;
+    }
 
-.section-title {
-    grid-template-columns: 1fr 7fr;
-}
+    /* performance section */
+    #performance {
+        margin: 10% 4%;
+    }
 
-.performance-container {
-    grid-template-columns: 1fr;    
-}
+    .section-title {
+        grid-template-columns: 1fr 7fr;
+    }
 
-.performance-container img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+    .performance-container {
+        grid-template-columns: 1fr;
+    }
 
-#songs p {
-    color: #ffffff;
-    text-align: center;
-    margin: 0rem 3rem;
-    padding-bottom: 1rem;
-    font-size: 1rem;
-}
+    .performance-container img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
-#songs button {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: 7rem;
-}
+    #songs p {
+        color: #ffffff;
+        text-align: center;
+        margin: 0rem 3rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    #songs button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        width: 7rem;
+    }
+
+    /* kalakuta section */
+    #republic {
+        margin: 0;
+    }
+    .republic-outter {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ffffff;
+        margin: 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .republic-content p {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .republic-container img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+    
+    .republic-container img.image-1 {
+        position: absolute;
+        z-index: 1;
+        border-radius: 0.5rem;
+        box-shadow: 10px 10px 5px #0C1024;
+    
+    }
+    
+    .republic-container img.image-2 {
+        position: absolute;
+        z-index: 2;
+        border-radius: 0.5rem;
+        box-shadow: 10px 10px 5px #0C1024;
+        margin-top: 14%;
+        margin-left: 12%;
+    }
+    
 }
 
 @media only screen and (max-width: 425px) {
@@ -409,21 +781,21 @@ a {
         font-size: 2rem;
         margin: 0 20vw;
         text-align: center;
-    }  
+    }
 
     #biography {
-    margin: 10% 5%;
+        margin: 10% 5%;
     }
 
     .bio-container {
         /* margin: 2rem; */
-        display: block;    
+        display: block;
     }
 
     .bio-container button {
-        margin-bottom: 2rem;  
+        margin-bottom: 2rem;
     }
-    
+
     .bio-container img {
         width: 65vw;
         height: 30vh;
@@ -436,7 +808,7 @@ a {
     }
 
     .hero {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/Fela-Kuti_4.webp) ;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/Fela-Kuti_4.webp);
         /* background-position: center; */
         background-repeat: no-repeat;
         background-size: cover;
@@ -444,5 +816,47 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .republic-outter {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ffffff;
+        margin: 1rem;
+        
+    }
+
+    .republic-content p {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .republic-container img {
+        width: 60%;
+        max-width: 200px;
+        height: auto;
+    }
+    
+    .republic-container img.image-1 {
+        position: absolute;
+        z-index: 1;
+        border-radius: 0.5rem;
+        box-shadow: 10px 10px 5px #0C1024;
+    
+    }
+    
+    .republic-container img.image-2 {
+        position: absolute;
+        z-index: 2;
+        border-radius: 0.5rem;
+        box-shadow: 10px 10px 5px #0C1024;
+        margin-top: 20%;
+        margin-left: 20%;
+    }
+    
+    .republic-contentainer {
+        display: block;
     }
 }
