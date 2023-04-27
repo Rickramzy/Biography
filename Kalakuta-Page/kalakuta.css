@@ -1,0 +1,262 @@
+#kalakuta-hero {
+    background-image: url(../assets/images/fela-wives.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+}
+
+#the-republic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7%;
+    margin: 7rem;
+}
+
+#the-republic h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-left: 10rem;
+}
+
+#the-republic p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7%;
+}
+
+.pic {
+    cursor: pointer;
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+    /* animation: moves 2s infinite; */
+}
+
+/* .photos {
+    position: absolute;
+    width: 300px;
+    height: 300px; 
+    overflow: hidden;  
+  } */
+
+.photos img.pic {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    object-fit: cover;
+    /* Make the image cover the container */
+    transform: scale(0.2);
+    /* Sets the initial scale of the image */
+    transition: transform 0.5s ease-in-out;
+    /* Add transition effect */
+}
+
+img:hover {
+    transform: scale(0.8) translate(20px, -10px);
+    /* Sets the hover scale and translate of the image */
+}
+
+
+@keyframes transform {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.image1 {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.image3 {
+    margin-top: 3rem;
+}
+
+#kalakuta-museum {
+    margin: 7rem 4rem 3rem 2rem;
+}
+
+#kalakuta-museum h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.museum-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+}
+
+.museum-image {
+    cursor: pointer;
+    height: 35vh;
+    width: 40vw;
+    max-width: 700px;
+}
+
+.museum-content p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+#museum-subsection {
+    margin: 2rem;
+}
+
+#museum-subsection p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* .footer-logo img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+}
+
+.foot_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4rem;
+} */
+
+/* media queries */
+@media only screen and (max-width: 1024px) {
+    .image1 {
+        height: auto;
+        width: 100%;
+        max-width: 450px;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .image3 {
+        margin-top: 3rem;
+        margin-right: 0rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #the-republic {
+        margin: 5rem 3rem;
+    }
+
+    #the-republic h1 {
+        margin-left: 4rem;
+    }
+
+    #the-republic p {
+        font-size: 1.2rem;
+    }
+
+    #photos {
+        display: block;
+    }
+    
+    .image1 {
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .image2 {
+        max-width: 900px;
+    }
+    .image3 {
+        max-width: 500px;
+        margin-right: 2rem;
+        margin-left: 8rem;
+    }
+    #kalakuta-museum h1 {
+        margin-bottom: 1rem;
+    }
+    
+    .museum-content {
+        grid-gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #the-republic {
+        display: block;
+        margin: 5rem 1rem;
+    }
+
+    #the-republic h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-left: 0rem;
+    }
+
+    
+    .image1 {
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .image2 {
+        max-width: 500px;
+    }
+    .image3 {
+        max-width: 500px;
+        margin-top: 2rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    #kalakuta-museum {
+        margin: 7rem 2rem 3rem 2rem;
+    }
+    
+    #kalakuta-museum h1 {
+        margin-bottom: 0.5rem;
+    }
+    
+    .museum-content {
+        display: block;
+        margin-right: 0rem;
+    }
+
+    .museum-content p {
+        margin-right: 0rem;
+    }
+    .museum-image {
+        height: 35vh;
+        width: 80vw;
+        max-width: 700px;
+    }
+}

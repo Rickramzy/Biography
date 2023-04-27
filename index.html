@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="./style.css">
-    <link type="text/css" rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Fela | Biography, Life and Shows</title>
 </head>
 
 <body>
     <div class="menu-btn">
-        <img src="./assets/images/bars.jpg.png">
+       <a href="#"><img src="./assets/images/bars.jpg.png"></a>
     </div>
     <div class="container">
         <nav class="main-nav">
@@ -24,10 +23,15 @@
                 <a href="#biography">
                     <li>Biography</li>
                 </a>
-                <li>Credits</li>
-                <li>Songs</li>
-                <li>Performances</li>
-                <li>Kalakuta Republic</li>
+                <a href="#songs">
+                    <li>Songs</li>
+                </a>
+                <a href="#performance">
+                    <li>Performances</li>
+                </a>
+                <a href="#republic">
+                    <li>Kalakuta Republic</li>
+                </a>
             </ul>
             <ul class="right-menu">
                 <img src="./assets/images/Gallery.gif">
@@ -72,7 +76,7 @@
                 incompletely as eveluate of African entertainers whom he felt had turned their backs on their African
                 melodic roots in arrange to imitate
                 current American pop music patterns.</p>
-            <a href="#"><button>Listen here</button></a>
+            <a href="./Songs-Page/songs.html"><button>Listen here</button></a>
         </div>
     </section>
     <section id="performance">
@@ -91,7 +95,7 @@
                     which their visual imaginations are communicated. The vocalists of the gather played a reinforcement
                     part for Fela, ordinarily reverberating his
                     words or murmuring along, whereas the artists would put on a execution of suggestive way.</p>
-                <a href="#"><button>View more</button></a>
+                <a href="./Performance-Page/performance.html"><button>View more</button></a>
             </div>
             <div class="show-clip">
                 <video controls src="./assets/videos/Fela Kuti & Africa 70 - V.I.P. 2_2 (Berlin 1978).mp4"
@@ -104,7 +108,7 @@
     <section class="republic-outter">
         <section id="republic">
             <div class="republic-container">
-                <div>
+                <div class="image-container">
                     <img src="./assets/images/kalakuta-Queens.jpg" alt="Fela republic" class="image-1">
                     <img src="./assets/images/kalakuta-7o.jpg" alt="" class="image-2">
                 </div>
@@ -120,7 +124,7 @@
                         corruption of the then military government, Fela felt he couldn't be portion of such and
                         announced the Kalakuta Republic an
                         imperial state and independent of Nigeria.</p>
-                    <a href=""><button>Read more</button></a>
+                    <a href="./Kalakuta-Page/kalakuta.html"><button>Read more</button></a>
                 </div>
             </div>
         </section>
@@ -175,8 +179,28 @@
                 </div>
             </li>
         </ul>
-        <a href="#"><button>View gallery</button></a>
+    <a href="./Gallery-Page/gallery.html"><button>View gallery</button></a>
     </section>
+    <footer>
+        <div class="foot">
+            <div class="">
+                <a href="#"><img src="./assets/images/fela-logo.jpg.png" class="logo"></a>
+            </div>
+          <div class="">
+            <p class="final-p">About Us</p>
+          </div>
+          <div class="address">
+            <p>FCT - Abuja, Nigeria</p>
+          </div>
+          <div>
+            <p class="final-p"><span class="contact"><span class="mobile">Ralph: (+234) 8104561073</span></p>
+          </div>
+          </div>
+          <br><br>
+          <div>
+            <p class="copy">&copy; Ralphtech 2023</p>
+          </div>
+    </footer>
     <script>
         document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
     </script>

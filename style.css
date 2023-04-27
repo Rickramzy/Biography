@@ -566,6 +566,37 @@ input:checked + .slide-container .nav label {
 
 }
 
+/* footer section */
+footer {
+    background-color:  rgb(66, 2, 2);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  
+   
+  .footer-logo img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 7%;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.foot_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 7%;
+}
+
+
 /* media query */
 @media only screen and (max-width: 960px) {
     .menu-btn {
@@ -624,9 +655,7 @@ input:checked + .slide-container .nav label {
         right: 30px;
     }
 
-    /* .hero h1 {
-        margin: 0 20vw;
-    } */
+    
     .bio-container p {
         font-size: 13px;
     }
@@ -657,6 +686,8 @@ input:checked + .slide-container .nav label {
     .performance-container button {
         padding: 0.5rem 1rem;
     }
+
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -771,9 +802,14 @@ input:checked + .slide-container .nav label {
         margin-left: 12%;
     }
     
+    .foot {
+        display: block;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
     .hero h1 {
         color: #ffffff;
         font-weight: 500;
@@ -818,6 +854,122 @@ input:checked + .slide-container .nav label {
         align-items: center;
     }
 
+    /* kalakuta section */
+    .republic-outter {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #ffffff;
+        margin: 1rem;
+        
+    }
+
+    .republic-content p {
+        padding: 0.5rem;
+        margin: 0.5rem;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .republic-container img {
+        width: 60%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .republic-container {
+        display: block;
+    }
+
+    .section-title {
+        display: block;
+    }
+    
+    .republic-container img.image-1 {
+        position: absolute;
+        z-index: 1;
+        border-radius: 0.5rem;
+        box-shadow: 10px 10px 5px #0C1024;
+    
+    }
+    
+    .republic-container img.image-2 {
+        position: absolute;
+        z-index: 2;
+        border-radius: 0.5rem;
+        box-shadow: 10px 10px 5px #0C1024;
+        margin-top: 20%;
+        margin-left: 20%;
+    }
+    
+    .republic-container {
+        grid-template-columns: 1fr;
+    }
+
+    
+
+    .section-title h1 {
+        margin-top: 14rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    #gallery img {
+        height: 50vh;
+        width: 90vw;
+        max-width: 390px;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding-right: rem;
+        display: block;
+    }
+
+  
+  }
+
+@media only screen and (max-width: 375px) {
+    .hero h1 {
+        color: #ffffff;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin: 0 20vw;
+        text-align: center;
+    }
+
+    #biography {
+        margin: 10% 5%;
+    }
+
+    .bio-container {
+        display: block;
+    }
+
+    .bio-container button {
+        margin-bottom: 2rem;
+    }
+
+    .bio-container img {
+        width: 65vw;
+        height: 30vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero p {
+        font-size: 0.5rem;
+    }
+
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/Fela-Kuti_4.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* kalakuta section */
     .republic-outter {
         padding: 1rem;
         border-radius: 0.5rem;
@@ -856,7 +1008,29 @@ input:checked + .slide-container .nav label {
         margin-left: 20%;
     }
     
-    .republic-contentainer {
+    .republic-container {
         display: block;
+    }
+
+    .section-title {
+        display: block;
+    }
+
+    .section-title h1 {
+        margin-top: 14rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    #gallery img {
+        height: 50vh;
+        max-width: 290px;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        display: block;
+    }
+
+    #gallery {
+        margin-bottom: 3rem;
     }
 }
